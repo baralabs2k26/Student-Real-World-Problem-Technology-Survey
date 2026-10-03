@@ -56,6 +56,10 @@ button:focus-visible{outline:3px solid var(--mark);outline-offset:2px}
 .done h2{margin:0 0 8px}
 .done p{color:var(--muted);margin:0}
 .privacy{margin-top:18px;font-size:.82rem;color:var(--muted);text-align:center}
+.credit{margin-top:14px!important}
+.credit a,.foot a{color:var(--brand);font-weight:700;text-decoration:none}
+.credit a:hover,.foot a:hover{text-decoration:underline}
+.foot{text-align:center;margin-top:28px;padding-top:16px;border-top:1px solid var(--line);font-size:.95rem}
 [hidden]{display:none!important}
 @media (prefers-reduced-motion: reduce){*{transition:none!important}}
 </style>
@@ -89,10 +93,12 @@ button:focus-visible{outline:3px solid var(--mark);outline-offset:2px}
   <div class="card done" id="done" hidden>
     <div class="tick" aria-hidden="true">&#10003;</div>
     <h2>Thank you!</h2>
-    <p>Your answers have been submitted. You can close this page now.</p>
+    <p>Thanks for filling this form. Your answers have been submitted.</p>
+    <p class="credit">Made by <a href="https://mbarath.vercel.app" target="_blank" rel="noopener">BARALAB</a></p>
   </div>
 
   <p class="privacy">Answers are anonymous and used only to choose a student project.</p>
+  <footer class="foot"><a href="https://mbarath.vercel.app" target="_blank" rel="noopener">@BARALAB</a></footer>
 </div>
 
 <script>
